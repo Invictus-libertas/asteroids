@@ -41,7 +41,7 @@ def main():
                 sys.exit()
             for bullet in shots:
                 if asteroid.collides_with(bullet):
-                    asteroid.kill()
+                    asteroid.split()
                     bullet.kill()
 
         pygame.Surface.fill(screen, 0) # Draws Screen
